@@ -90,7 +90,7 @@ sqlite> .quit
 $ npx wrangler d1 migrations apply DB_PRODUCTION
 ```
 
-**⚠️ NOTE: The `_PRODUCTION` bindings in `wrangler.toml` file are totally optional. They are only needed if you wish to interact with the production environment using the `wrangler` CLI tool. But it is definitely needed if you are using D1 as it makes it really easy to apply migrations to the production environment before deployment - else the deployment obviously fails as the schema on the production environment is not synced with the code changes. When setting the binding names in the Cloudflare Dashboard, you will set it to the plain binding name WITHOUT the `_PRODUCTION` suffix.**
+**ℹ️ NOTE: The `_PRODUCTION` bindings in `wrangler.toml` file are totally optional. They are only needed if you wish to interact with the production environment using the `wrangler` CLI tool. But it is definitely needed if you are using D1 as it makes it really easy to apply migrations to the production environment before deployment - else the deployment obviously fails as the schema on the production environment is not synced with the code changes. When setting the binding names in the Cloudflare Dashboard, you will set it to the plain binding name WITHOUT the `_PRODUCTION` suffix.**
 
 **And for local environment, the binding name and ID should be the same. This makes it easy to use `wrangler` CLI tool to also interact with local environment. So if you set `KV` to be the binding for a KV store, then set id to also be `KV`.**
 
