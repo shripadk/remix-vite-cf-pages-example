@@ -1,0 +1,7 @@
+.wrangler
+.dev.vars
+
+/.cache
+/build
+/scripts/build
+node_modules

@@ -1,0 +1,30 @@
+{
+  "name": "remix-vite-cf-pages-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev --config vite.config.vite-node.ts",
+    "build": "vite build && vite build --ssr && bash scripts/build.sh",
+    "publish": "wrangler pages deploy ./scripts/build/client --commit-dirty --branch main --project-name remix-vite-deploy-pages"
+  },
+  "dependencies": {
+    "@remix-run/react": "0.0.0-nightly-db4471d-20231214",
+    "@remix-run/server-runtime": "0.0.0-nightly-db4471d-20231214",
+    "isbot": "^3.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231121.0",
+    "@hiogawa/vite-node-miniflare": "0.0.0-pre.12",
+    "@remix-run/dev": "0.0.0-nightly-db4471d-20231214",
+    "@remix-run/eslint-config": "^2.4.1",
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/react": "18.2.12",
+    "@types/react-dom": "18.2.5",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.22.4"
+  }
+}

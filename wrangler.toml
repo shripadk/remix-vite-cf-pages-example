@@ -1,0 +1,14 @@
+kv_namespaces = [
+  { binding = "KV_PRODUCTION", id = "<ADD_YOUR_PRODUCTION_ID_HERE>" },
+  { binding = "KV", id = "KV" }
+]
+
+r2_buckets = [
+  { binding = "R2_BUCKET_PRODUCTION", bucket_name = "<ADD_BUCKET_NAME_HERE>" },
+  { binding = "R2_BUCKET", bucket_name = "R2_BUCKET" }
+]
+
+d1_databases = [
+  { binding = "DB_PRODUCTION", database_id = "<ADD_YOUR_PRODUCTION_DB_ID_HERE>", migrations_table = "migrations", migrations_dir = "migrations" },
+  { binding = "DB", database_id = "DB", migrations_table = "migrations", migrations_dir = "migrations" }
+]

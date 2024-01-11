@@ -1,0 +1,22 @@
+{
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "include": [
+    "app"
+  ],
+  "compilerOptions": {
+    "exactOptionalPropertyTypes": false,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "types": [
+      "vite/client"
+    ],
+    "jsx": "react-jsx"
+  }
+}
