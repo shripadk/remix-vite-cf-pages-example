@@ -12,9 +12,9 @@ Once you have done that, we will first create a new Cloudflare Pages app like so
 $ npx wrangler pages project create remix-vite-deploy-pages --production-branch main
 ```
 
-Once your Pages project is created, goto Cloudflare Dashboard to *Workers & Pages* > *Overview*, click on `remix-vite-deploy-pages`, then goto *Settings* > *Functions*. There scroll down to *KV namespace bindings*, click *Add binding* and set *VARIABLE_NAME* to **SESSION** for this example. Then choose the KV namespace to be the namespace your created above.
+Once your Pages project is created, goto Cloudflare Dashboard to *Workers & Pages* > *Overview*, click on `remix-vite-deploy-pages`, then goto *Settings* > *Functions*. There scroll down to *KV namespace bindings*, click *Add binding* and set *VARIABLE_NAME* to **KV** for this example. Then choose the KV namespace to be the namespace your created above.
 
-Similarly, scroll down below to *R2 bucket bindings*, click *Add binding* and set *VARIABLE_NAME* to **IMAGE_BUCKET** and choose the R2 bucket you created.
+Similarly, scroll down below to *R2 bucket bindings*, click *Add binding* and set *VARIABLE_NAME* to **R2_BUCKET** and choose the R2 bucket you created.
 
 Then scroll down below to *D1 database bindings*, click *Add binding* and set *VARIABLE_NAME* to **DB** and choose the D1 database you created.
 
