@@ -94,6 +94,10 @@ $ npx wrangler d1 migrations apply DB_PRODUCTION
 
 **And for local environment, the binding name and ID should be the same. This makes it easy to use `wrangler` CLI tool to also interact with local environment. So if you set `KV` to be the binding for a KV store, then set id to also be `KV`.**
 
+## vite.config.vite-node.ts
+
+Modify the `options.kvNamespaces`, `options.r2Buckets` and `options.d1Databases` if you make any changes to your bindings within the `miniflareOptions(options)` callback.
+
 ## app/env.d.ts
 
 Modify the `env` declaration in env.d.ts file if you make any changes to your bindings.
